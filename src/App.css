@@ -15,6 +15,7 @@
 }
 
 .row {
+  background-color: #282828;
   border: 1px solid green;
   border-radius: 10px;
   box-shadow: 0 0 20px #00ff33;
@@ -1481,4 +1482,381 @@
 
 .button_01:hover .wave {
   top: 0%;
+}
+
+/* BUTTON 13 END  */
+
+/* BUTTON 14 START  */
+
+.btn-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),
+    linear-gradient(
+      137.48deg,
+      #ffdb3b 10%,
+      #fe53bb 45%,
+      #8f51ea 67%,
+      #0044ff 87%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: "Avalors Personal Use";
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+#glow-space {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn-space:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn-space:hover {
+  transform: scale(1.1);
+}
+
+.btn-space:active {
+  border: double 4px #fe53bb;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn-space:active .circle {
+  background: #fe53bb;
+}
+
+#stars-space {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars-space::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars-space::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars-space::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars-space::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* BUTTON 14 END  */
+
+/* BUTTON 15 START  */
+
+.lazer {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+.lazer:hover {
+  letter-spacing: 0.25em;
+  background: #ff1867;
+  color: #ff1867;
+  box-shadow: 0 0 45px #ff1867;
+}
+
+.lazer::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+
+.lazer span {
+  position: relative;
+  z-index: 1;
+}
+
+.lazer i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.lazer i::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.lazer:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.lazer i::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.lazer:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+/* BUTTON 15 END  */
+
+/* BUTTON 16 START  */
+
+.lol {
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.lol:hover {
+  transform: scale(5);
+}
+
+/* BUTTON 16 END  */
+
+/* BUTTON 17 START  */
+
+.reset {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font: 18px "Margarine", sans-serif;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 3rem;
+  padding-top: 4rem;
+  font: 500 14px "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.button-parrot .parrot {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  animation: blink 0.8s infinite;
+  color: transparent;
+}
+
+.button-parrot .parrot:before {
+  content: "Click Me!";
+}
+
+.button-parrot .parrot:nth-child(1) {
+  top: -30px;
+  left: -40px;
+  font: 12px/1 "Margarine", sans-serif;
+  transform: rotate(-20deg);
+  animation-duration: 0.5s;
+}
+
+.button-parrot .parrot:nth-child(2) {
+  font: 12px/1 "Margarine", sans-serif;
+  right: -40px;
+  top: -20px;
+  transform: rotate(15deg);
+  animation-duration: 0.3s;
+}
+
+.button-parrot .parrot:nth-child(3) {
+  font: 16px/1 "Margarine", sans-serif;
+  top: -60px;
+  left: 15px;
+  transform: rotate(10deg);
+  animation-duration: 1s;
+}
+
+.button-parrot .parrot:nth-child(4) {
+  font: 18px/1 "Margarine", sans-serif;
+  top: -70px;
+  left: 95px;
+  transform: rotate(2deg);
+  animation-duration: 0.7s;
+}
+
+.button-parrot .parrot:nth-child(5) {
+  font: 14px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 105px;
+  transform: rotate(-20deg);
+  animation-duration: 0.8s;
+}
+
+.button-parrot .parrot:nth-child(6) {
+  font: 12px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 5px;
+  transform: rotate(10deg);
+  animation-duration: 1.2s;
+}
+
+.button-parrot button:hover .parrot:before {
+  content: "Do it!";
+  width: 70px;
+}
+
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+
+  40%,
+  60% {
+    color: #fff;
+  }
 }

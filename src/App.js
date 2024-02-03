@@ -11,6 +11,12 @@ function App() {
     console.log(btnNum);
   };
 
+  const handleReset = () => {
+    setTimeout(() => {
+      setBtnNum(0);
+    }, 2500);
+  };
+
   return (
     <>
       <div className="container">
@@ -32,6 +38,10 @@ function App() {
             {btnNum === 10 && <Button11 onHandleClick={handleClick} />}
             {btnNum === 11 && <Button12 onHandleClick={handleClick} />}
             {btnNum === 12 && <Button13 onHandleClick={handleClick} />}
+            {btnNum === 13 && <Button14 onHandleClick={handleClick} />}
+            {btnNum === 14 && <Button15 onHandleClick={handleClick} />}
+            {btnNum === 15 && <Button16 onHandleClick={handleClick} />}
+            {btnNum === 16 && <Button17 onHandleClick={handleReset} />}
           </div>
         </div>
       </div>
@@ -498,9 +508,9 @@ const Button12 = ({ onHandleClick }) => {
   );
 };
 
-const Button13 = () => {
+const Button13 = ({ onHandleClick }) => {
   return (
-    <button className="button_01">
+    <button className="button_01" onClick={onHandleClick}>
       <a>GO AWAY</a>
       <svg
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -571,6 +581,55 @@ const Button13 = () => {
         ></path>
       </svg>
     </button>
+  );
+};
+
+const Button14 = ({ onHandleClick }) => {
+  return (
+    <button class="btn-space" type="button" onClick={onHandleClick}>
+      <strong>ALMOST DONE</strong>
+      <div id="container-stars">
+        <div id="stars-space"></div>
+      </div>
+
+      <div id="glow-space">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
+  );
+};
+
+const Button15 = ({ onHandleClick }) => {
+  return (
+    <button class="lazer" onClick={onHandleClick}>
+      <span>2 more left</span>
+      <i></i>
+    </button>
+  );
+};
+
+const Button16 = ({ onHandleClick }) => {
+  return (
+    <button class="lol" onClick={onHandleClick}>
+      🖕
+    </button>
+  );
+};
+
+const Button17 = ({ onHandleClick }) => {
+  return (
+    <div className="item button-parrot">
+      <button class="reset" onClick={onHandleClick}>
+        RESET
+        <div className="parrot" />
+        <div className="parrot" />
+        <div className="parrot" />
+        <div className="parrot" />
+        <div className="parrot" />
+        <div className="parrot" />
+      </button>
+    </div>
   );
 };
 
