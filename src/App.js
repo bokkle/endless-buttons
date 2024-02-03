@@ -14,7 +14,7 @@ function App() {
   const handleReset = () => {
     setTimeout(() => {
       setBtnNum(0);
-    }, 2500);
+    }, 1000);
   };
 
   return (
@@ -22,7 +22,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="textbox">
-            <h3>Do not press</h3>
+            <h3>DON'T PRESS!</h3>
           </div>
           <div className="button-container">
             {btnNum === 0 && <Button onHandleClick={handleClick} />}

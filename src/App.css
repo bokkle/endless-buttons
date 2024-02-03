@@ -16,15 +16,48 @@
 
 .row {
   background-color: #282828;
-  border: 1px solid green;
+  border: 1px solid f2ff00;
   border-radius: 10px;
-  box-shadow: 0 0 20px #00ff33;
+  box-shadow: 0 0 20px #f2ff00;
   width: 300px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* adding  */
+  position: relative;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.row::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: repeating-linear-gradient(
+    #282828 0%,
+    #282828 7.5px,
+    #f2ff00 7.5px,
+    #f2ff00 15px,
+    #282828 15px,
+    #282828 22.5px,
+    #f2ff00 22.5px,
+    #f2ff00 30px
+  );
+  transform: rotate(-45deg);
+  animation: animateRow 20s linear infinite;
+}
+
+@keyframes animateRow {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 0 250px;
+  }
 }
 
 .textbox {
@@ -35,14 +68,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #242424;
+  z-index: 2;
 }
 
 .button-container {
-  width: 300px;
-  height: 300px;
+  margin-top: -2px;
+  width: 292px;
+  height: 292px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #242424;
+  z-index: 2;
 }
 
 /* BUTTON 1 */
@@ -1746,13 +1784,15 @@ strong {
 /* BUTTON 16 START  */
 
 .lol {
+  background: transparent;
+  border: none;
   width: 150px;
   height: 50px;
   font-size: 30px;
 }
 
 .lol:hover {
-  transform: scale(5);
+  transform: scale(10);
 }
 
 /* BUTTON 16 END  */
