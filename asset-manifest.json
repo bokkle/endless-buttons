@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/endless-buttons/static/css/main.96e36d30.css",
-    "main.js": "/endless-buttons/static/js/main.663c2240.js",
+    "main.js": "/endless-buttons/static/js/main.46d6b30b.js",
     "index.html": "/endless-buttons/index.html",
     "main.96e36d30.css.map": "/endless-buttons/static/css/main.96e36d30.css.map",
-    "main.663c2240.js.map": "/endless-buttons/static/js/main.663c2240.js.map"
+    "main.46d6b30b.js.map": "/endless-buttons/static/js/main.46d6b30b.js.map"
   },
   "entrypoints": [
     "static/css/main.96e36d30.css",
-    "static/js/main.663c2240.js"
+    "static/js/main.46d6b30b.js"
   ]
 }
