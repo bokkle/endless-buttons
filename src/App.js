@@ -25,23 +25,23 @@ function App() {
             <h3>DON'T PRESS!</h3>
           </div>
           <div className="button-container">
-            {btnNum === 0 && <Button onHandleClick={handleClick} />}
-            {btnNum === 1 && <Button2 onHandleClick={handleClick} />}
-            {btnNum === 2 && <Button3 onHandleClick={handleClick} />}
-            {btnNum === 3 && <Button4 onHandleClick={handleClick} />}
-            {btnNum === 4 && <Button5 onHandleClick={handleClick} />}
-            {btnNum === 5 && <Button6 onHandleClick={handleClick} />}
-            {btnNum === 6 && <Button7 onHandleClick={handleClick} />}
-            {btnNum === 7 && <Button8 onHandleClick={handleClick} />}
-            {btnNum === 8 && <Button9 onHandleClick={handleClick} />}
-            {btnNum === 9 && <Button10 onHandleClick={handleClick} />}
-            {btnNum === 10 && <Button11 onHandleClick={handleClick} />}
-            {btnNum === 11 && <Button12 onHandleClick={handleClick} />}
-            {btnNum === 12 && <Button13 onHandleClick={handleClick} />}
-            {btnNum === 13 && <Button14 onHandleClick={handleClick} />}
-            {btnNum === 14 && <Button15 onHandleClick={handleClick} />}
-            {btnNum === 15 && <Button16 onHandleClick={handleClick} />}
-            {btnNum === 16 && <Button17 onHandleClick={handleReset} />}
+            {btnNum === 0 && <Button key={0} onHandleClick={handleClick} />}
+            {btnNum === 1 && <Button2 key={1} onHandleClick={handleClick} />}
+            {btnNum === 2 && <Button3 key={2} onHandleClick={handleClick} />}
+            {btnNum === 3 && <Button4 key={3} onHandleClick={handleClick} />}
+            {btnNum === 4 && <Button5 key={4} onHandleClick={handleClick} />}
+            {btnNum === 5 && <Button6 key={5} onHandleClick={handleClick} />}
+            {btnNum === 6 && <Button7 key={6} onHandleClick={handleClick} />}
+            {btnNum === 7 && <Button8 key={7} onHandleClick={handleClick} />}
+            {btnNum === 8 && <Button9 key={8} onHandleClick={handleClick} />}
+            {btnNum === 9 && <Button10 key={9} onHandleClick={handleClick} />}
+            {btnNum === 10 && <Button11 key={10} onHandleClick={handleClick} />}
+            {btnNum === 11 && <Button12 key={11} onHandleClick={handleClick} />}
+            {btnNum === 12 && <Button13 key={12} onHandleClick={handleClick} />}
+            {btnNum === 13 && <Button14 key={13} onHandleClick={handleClick} />}
+            {btnNum === 14 && <Button15 key={14} onHandleClick={handleClick} />}
+            {btnNum === 15 && <Button16 key={15} onHandleClick={handleClick} />}
+            {btnNum === 16 && <Button17 key={16} onHandleClick={handleReset} />}
           </div>
         </div>
       </div>
